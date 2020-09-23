@@ -10,6 +10,15 @@ const connect = function() {
   });
   // interpret incoming data as text
   conn.setEncoding('utf8'); 
+
+  conn.on('connect', () => {
+    conn.write("Name: BWS");
+  });
+
+  conn.on('connect', () => {  
+    console.log("Successfully connected to game server");
+  });
+
   conn.on('data', (data) => {  
     console.log('Incomming:', data);
   });
