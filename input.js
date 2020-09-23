@@ -28,6 +28,9 @@ const setupInput = function(conn) {
     if (key === 'd') {
       connection.write("Move: right");
     }
+    if (key === 'b') {
+      connection.write("Say: ima snek");
+    }
   });
 
   return stdin;
