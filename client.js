@@ -15,6 +15,28 @@ const connect = function() {
     conn.write("Name: BWS");
   });
 
+  // conn.on('connect', (data) => {
+  //   conn.write("Move: up");
+  // });
+
+  // conn.on('connect', (data) => {
+  //   setInterval (() => {
+  //   conn.write("Move: left");
+  //   }, 500);
+  // });
+
+  // conn.on('connect', (data) => {
+  //   setTimeout (() => {
+  //   conn.write("Move: up");
+  //   }, 1000);
+  // });
+
+  // conn.on('connect', (data) => {
+  //   setTimeout (() => {
+  //   conn.write("Move: left");
+  //   }, 1500);
+  // });
+
   conn.on('connect', () => {  
     console.log("Successfully connected to game server");
   });
